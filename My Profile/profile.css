@@ -1,0 +1,20 @@
+body{
+    background-color: black;
+}
+
+.border{
+    border: 1px solid white;
+}
+.box{
+    margin-top: 100px;
+    margin-left: 25%; /*Para ma center, kasi nga yung width is 50, kaya dapat 50/2=25% */
+    width: 50%;
+    color: white;
+    text-align: center;
+}
+    .profile_pic{
+        width: 100%
+    }
+    .name{
+        font-size: 2rem;
+    }
