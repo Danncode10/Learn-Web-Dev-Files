@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(75, 2, 2);
+}
+.border{
+    border: 1px solid white;
+}
+.poster{
+    margin-top: 7%;
+    margin-bottom: 7%;
+    margin-left: 25%;
+    width: 50%;
+    padding: 5%;
+}
+.posterimg{
+    width: 100%;
+    border: 1px solid white;
+}
+.postertext_h1{
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}
+.postertext_p{
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+}
+.white{
+    color: white;
+}
+.center{
+    text-align: center;
+}
+.justify{
+    text-align: justify;
+}
+
+
+.options{
+    width: 100%;
+}
+.button{
+    width: 21%;
+    margin: 1%;
+    display: inline-block;
+}
+
+/*body*/
