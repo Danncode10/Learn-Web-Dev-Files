@@ -1,0 +1,48 @@
+.header{
+    color: orange;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div{
+    margin: 20px;
+}
+
+.title{
+    font-size: 40px;
+}
+
+.title > h1 > span{
+    color: rgb(3, 3, 168);
+}
+
+img{
+    width: 300px;
+}
+
+.beauty{
+    float: left;
+    display: inline-block;
+}
+.beauty > div{
+    float: right;
+    display: inline-block;
+    width: 400px;
+    margin: 3rem;
+}
+
+.construction{
+    float: right;
+}
+
+.construction > div{
+    display: inline-block;
+    width: 300px;
+    margin: 3rem;
+}
+
+footer > h4{
+    display: block;
+    text-align: right;
+}
+
