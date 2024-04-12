@@ -1,0 +1,26 @@
+* {
+    color: white;
+    /* border: solid; */
+}
+
+body{
+    background-color: black;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    flex-basis: 100px;
+    height: 100vh;
+    justify-content: center;
+}
+
+.menu > div > p{
+    text-align: center;
+}
+
+.menu > div > a{
+    flex: 1;
+    border: solid white 1px;
+}
