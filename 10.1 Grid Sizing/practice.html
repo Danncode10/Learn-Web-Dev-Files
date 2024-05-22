@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template: 100px 200px / 400px 800px;
+        }
+        .griditem{
+            border: solid black
+        }
+        .two{
+            grid-template-rows: 200px 400px;
+            grid-template-columns: 200px minmax(400px,800px);
+        }
+        .three{
+            grid-template-rows: repeat(2, 100px);
+            grid-template-columns: repeat(2, 100px);
+        }
+        .four{
+            grid-template: repeat(2, 300px)/repeat(3,300px);
+            grid-auto-rows: 300px;
+        }
+        .fr{
+            grid-template: 100px 100px / 2fr 2fr;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="griditem">1</div>
+        <div class="griditem">2</div>
+        <div class="griditem">3</div>
+        <div class="griditem">4</div>
+    </div>
+    <br />
+    <h1>fraction</h1>
+    <div class="grid-container fr">
+        <div class="griditem">1</div>
+        <div class="griditem">2</div>
+        <div class="griditem">3</div>
+        <div class="griditem">4</div>
+    </div>
+    <h1>minmax</h1>
+    <div class="grid-container two">
+        <div class="griditem">1</div>
+        <div class="griditem">2</div>
+        <div class="griditem">3</div>
+        <div class="griditem">4</div>
+    </div>
+    <h1>repeat</h1>
+    <div class="grid-container three">
+        <div class="griditem">1</div>
+        <div class="griditem">2</div>
+        <div class="griditem">3</div>
+        <div class="griditem">4</div>
+    </div>
+    <h1>grid-auto-rows</h1>
+    <div class="grid-container four">
+        <div class="griditem">1</div>
+        <div class="griditem">2</div>
+        <div class="griditem">3</div>
+        <div class="griditem">4</div>
+        <div class="griditem">5</div>
+    </div>
+</body>
+</html>

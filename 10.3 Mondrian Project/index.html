@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+
+    div{
+      border: solid;
+    }
+
+    .containerabove{
+      display: flex;
+      justify-content: center;
+    }
+
+    .container{
+      display: grid;
+      height: 748px;
+      width: 748px;
+
+      gap: 9px;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows:414px 130px 155px 20px;
+
+    }
+        .container>div{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+    .b,.c,.d,.g,.h{
+      background-color: #F0F1EC;
+    }
+    .e{
+      background-color: #004592;
+    }
+    .h{
+      background-color: #F9D01E;
+    }
+    .a{
+      background-color: #E72F24;
+    }
+    .i{
+      background-color: black;
+    }
+
+
+    /*Sizing*/
+
+    .b{
+      grid-column: span 3;
+    }
+
+    .c{
+      grid-area: 2 / 1 / -2 / 2;
+    }
+
+    .d{
+      grid-area: 2 / 2 / 4 / 4;
+    }
+    .f{
+      grid-area: 3 / 4 / 5 / 5;
+    }
+    .h{
+
+    }
+
+
+
+
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+<div class="containerabove">
+  <div class="container">
+    <div class="a">A</div>
+    <div class="b">B</div>
+    <div class="c">C</div>
+    <div class="d">D</div>
+        <div class="e">E</div>
+        <div class="f">F</div>
+    <div class="g">G</div>
+    <div class="h">H</div>
+    <div class="i">I</div>
+  </div>
+</div>
+
+</body>
+
+</html>

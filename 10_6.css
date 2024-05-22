@@ -1,0 +1,84 @@
+body{
+    background-color: lightblue;
+}
+
+div{
+    border: solid black 1px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 1em;
+
+}
+
+/* Sizing ng top, body and foot */
+
+        .top,.foot{
+            flex-basis: 75px;
+        }
+        .body{
+            flex-grow: 1;
+        }
+
+
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+/* sizing sa top */
+
+        .top>div{
+            flex-basis: 200px;
+        }
+        .logo{
+            flex-grow: 1;
+        }
+
+.top>div{
+    border-radius: 30px;
+    text-align: center;
+}
+
+
+
+.body{
+    display: grid;
+    width: 100%;
+    /* Use 100vh for height, 100% for width */
+    grid-template-columns: repeat(21, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+}
+
+/* .body sizing */
+
+        .lmenu{
+            grid-area: 1 / 1 / 16 / 8;
+        }
+        .left{
+            grid-area: 1 / 8 / 16 / 15;
+        }
+        .right{
+            grid-area: 1 / 15 / 16 / 22;
+        }
+        .image1{
+            grid-area: 5/12/11/18;
+            z-index: 1;
+            background-color: lightblue;
+        }
+
+/* .lmenu sizing */
+
+.lmenu{
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+}
+.lmenu>div{
+    height: 100%;
+}
